@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Player Statistics</title>
+    <link rel="stylesheet" href="../css/statsPage.css">
+    <script src="../js/statsPage.js"></script>
+    <audio src="../music/FormsPageMusic.wav" id="FormsPageMusic" autoplay = "autoplay" preload="auto"></audio>
+    <script type="text/javascript">
+        window.onload = function() {
+          music();
+        }
+        var audio = document.getElementById("FormsPageMusic");
+        function music() {
+          audio.play();
+        }
+      </script>
+</head>
+<body onload="makeTable(); setDarkModeStats(); insertData();">
+    <div id="wrapper">
+        <div id="title">
+            <h1>Player Statistics</h1>
+        </div>
+        <div id="stats">
+
+        </div>
+        <div id="top">
+            <a id="topBtn"href="lanceMenuPageTest.html">Back to Main Menu</a>
+        </div>
+    </div>
+    <button id="PlayButton" onclick="music();">
+        <img id = "playBtnImg" src="../images/play-button.svg" alt="Play button" srcset="">
+      </button>
+</body>
+</html>

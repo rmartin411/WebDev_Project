@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Chained</title>
+
+    <audio src="../music/GameplayMusic.wav" id="GameplayMusic" preload="auto"></audio>
+
+    <link href="../css/FontSize.css" rel="stylesheet">
+
+    <link href="../css/adventurePage.css" rel="stylesheet">
+
+    <link href="../css/WholeTextAdeventureStyling.css" rel="stylesheet">
+
+     <script type="text/javascript">
+
+         console.log("hit lightmode interal script");
+
+        if (sessionStorage.getItem('lightMode') == false){
+
+            var link = document.createElement('link');
+
+            var styles = ' body{background-color: #1c1d24;}';
+
+            var style = document.createElement('style');
+
+            style.type= 'text/css';
+
+            if (style.styleSheet) {
+                style.styleSheet.cssText = styles;
+            }
+            else {
+                style.appendChild(document.createTextNode(styles));
+            }
+
+            document.getElementsByTagName("head")[0].appendChild(style);
+        }
+
+    </script>
+
+<script type="text/javascript">
+  window.onload = function() {
+    music();
+  }
+  var audio = document.getElementById("GameplayMusic");
+  function music() {
+    audio.play();
+  }
+</script>
+
+    <script src="../js/FontResize.js" type="text/javascript"></script>
+    <script src="../js/FontStyle.js" type="text/javascript"></script>
+    <script src="../js/mode.js" type="text/javascript"></script>
+    <script src="../js/statsPage.js" type="text/javascript"></script>
+
+
+    <script defer src="../js/adventureScript.js"></script>
+
+</head>
+
+<body>
+
+  <pre id="bubbleText">
+    Click above to begin you imbecile!
+  </pre>
+
+  <img id="redVignette30" src="../images/BloodVignette20%.png" alt="Red Vignette">
+  <img id="redVignette20" src="../images/BloodVignette10%.png" alt="Red Vignette">
+  <img id="redVignette10" src="../images/BloodVignette5%.png" alt="Red Vignette">
+
+  <div id="deathScreen">
+    <img id="youAreDead" src="../images/youAreDeadWhiteText.png" alt="You Are Dead Text">
+
+  </div>
+
+  <div id="redGlow">
+
+  </div>
+
+  <button id="PlayButton" onclick="music();">
+    <img id="playImg" src="../images/play-button.svg" alt="Play button" srcset="">
+  </button>
+
+  <div id="curtain">
+      <span></span>
+      <span></span>
+      <span></span>
+      <a id="begin" onclick="toggleOff()">Shall We Begin...</a>
+    </div>
+
+  <label for="input" id="inputTag">Answer: </label>
+  <textarea id="input" rows="2" cols="20">
+
+    </textarea>
+  <button onclick="correct();" id="inputBtn">Enter</button>
+  <button onclick="confessLose();" id="confessLoseBtn">Confess</button>
+
+  <label for="lastInput" id="lastInputTag">What do you say?: </label>
+  <textarea id="lastInput" rows="2" cols="20">
+
+    </textarea>
+  <button onclick="lastWords();" id="lastInputBtn">Enter</button>
+
+  <pre id="userResponse">YOU: </pre>
+
+  <p id="label">Your score is:</p>
+  <div id="ring"></div>
+
+  <p>
+    <a id="credits" href="creditsPage.html">See Credits</a>
+  </p>
+
+      <div id="progressContainer"></div>
+      <div id="progressBar">0%</div>
+
+  <div class="wrapper Mode" id="wrapper">
+
+    <div class="right" id="right">
+      <img id="mainImage" src="../images/GameplayImagePlain.jpg" alt="Black and White image of chair in abandoned warehouse">
+      <img id="letterOptionsA" src="../images/button-A.png" alt="Letter option image">
+      <img id="letterOptionsB" src="../images/button-B.png" alt="Letter option image">
+      <img id="letterOptionsC" src="../images/button-C.png" alt="Letter option image">
+      <img id="letterOptionsD" src="../images/button-D.png" alt="Letter option image">
+
+
+    </div>
+
+    <div class="left" id="left">
+
+      <img id="bradImg" src="../images/Brad.png" alt="Particle art of bodybuilder">
+      <img id="jessicaImg" src="../images/Jessica.png" alt="Particle art of slim woman">
+      <img id="malcolmImg" src="../images/Malcolm.png" alt="Particle art of scrawny man">
+
+      <div id="dialogue" class="S20 GameplayfontSizeText FontType fontClassic">
+
+      </div>
+
+      <div class="timeStamp" id="timeStamp">
+        <p id="time">Time left - <span id="timeValueMin">01</span><span id="timeColon">:</span><span id="timeValueSec">10</span></p>
+      </div>
+
+      <div id=timeBarContainer>
+        <div class="timeBar" style="--width: 100;"></div>
+      </div>
+
+      <div id="buttons" class="buttonGrid FontType fontClassic GameplayfontSizeText S20">
+
+        <button class="btn S20 fontClassic">Option 1</button>
+        <button class="btn S20 fontClassic">Option 2</button>
+        <button class="btn S20 fontClassic">Option 3</button>
+        <button class="btn S20 fontClassic">Option 4</button>
+
+      </div>
+
+      <button id="transBtn" onclick="toggleOn()">React</button>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

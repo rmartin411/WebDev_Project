@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin:0px
+}
+#wrapperFront{
+    background-color: black;
+    height: 100%;
+    width:100%;
+    z-index: 0;
+    position: fixed;
+}
+
+#wrapperFront.fadeOut{
+    transition: 2.5s;
+    opacity: 0;
+}
+
+
+.showMe {
+    display:initial;
+}
+
+.hideMe {
+    display:none;
+}
+
+.GameName{
+    width:100%;
+    height: 50%;
+    position: fixed;
+    z-index: 1;
+
+
+}
+
+#Prompt{
+    width:100%;
+    height: 50%;
+    z-index: 1;
+    position: fixed;
+}
+
+#gameName{
+    font-size: 200px;
+    font-family: 'Lacquer', sans-serif;
+    color: red;
+    text-align: center;
+    padding-top: 10%
+
+}
+
+#prompt{
+    font-size: 25px;
+    font-family: 'Lacquer', sans-serif;
+    color: red;
+    text-align: center;
+    padding-top: 15%
+  }
+
+#back{
+  background-color: black;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  position: fixed;
+
+}
+
+.wrapper{
+
+  background-color: #2B2D2F;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper.changeOpacity{
+  transition: 2.5s;
+  opacity: 0;
+}
+
+
+
+.upperSeg{
+  background-color: black;
+  position:fixed;
+  top:0;
+  width: 100%;
+  height: 50%;
+  opacity: 1;
+}
+
+.upperSeg.trans{
+  opacity: 0.2;
+  transition: 1.5s;
+  transform: translateY(-75%);
+}
+
+.lowerSeg{
+  background-color: black;
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  height: 50%;
+  opacity: 1;
+}
+
+.lowerSeg.trans{
+  opacity: 0.2;
+  transition: 1.5s;
+  transform: translateY(75%);
+}
+
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: titleFont;
+  src: url('../fonts/Morganite-Book.ttf');
+}
+
+@font-face {
+  font-family: menuFont;
+  src: url('../fonts/Morganite-SemiBold.ttf');
+}
+
+.wrapper .fontClassic{
+    font-family: baskerville;
+}
+
+.wrapper .fontVerdana{
+    font-family: verdana;
+}
+
+.wrapper .fontTimesNewRoman{
+    font-family: "Times New Roman";
+}
+
+.wrapper .fontArial{
+    font-family: arial;
+}

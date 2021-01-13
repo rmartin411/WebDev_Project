@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Options</title>
+        <audio src="../music/FormsPageMusic.wav" id="FormsPageMusic" autoplay = "autoplay" preload="auto"></audio>
+        <link href="../css/FontSize.css" rel="stylesheet">
+        <link href="../css/OptionsPage.css" rel='stylesheet'>
+
+        <script src="../js/FontResize.js" type="text/javascript">
+        </script>
+        <script src="../js/FontStyle.js" type="text/javascript"></script>
+        <script src="../js/mode.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          window.onload = function() {
+            music();
+          }
+          var audio = document.getElementById("FormsPageMusic");
+          function music() {
+            audio.play();
+          }
+        </script>
+    </head>
+
+    <body onload="
+                  loadFromSessionResizeOptions();
+                  loadFromSessionStyleOptions();
+                  loadFromSessionModeOptions();
+                  ">
+        
+
+        <div class="wrapper">
+      <div class="chainedTitle">
+        <img id='Logo' src="../images/MainMenuTitleLM.png" alt="CHAINED title">
+      </div>
+      <div class="OptionsPageTitle">
+        <h1 id="OptionsTitleText"><u>Options</u></h1>
+                <br>
+          <span class="Options"> Font Size:
+              <span class="tab">
+                  <button id= "increseFontSize" onclick="incrementSize();">
+                      <img src="../images/plusSVGRed.svg" alt='plus button'>
+                  </button>
+              </span>
+              <span id="fontSizeText" class="S20 GameplayfontSizeText "> </span>
+
+              <span class="tab">
+                  <button id = "decreaseFontSize" onclick="decrementSize();">
+                      <img src="../images/minusSVGRed.svg" alt='minus button'>
+                  </button>
+              </span>
+          </span>
+
+          <br>
+          <br>
+
+          <button id="PlayButton" onclick="music();">
+            <img id = 'playBtnImg' src="../images/play-button.svg" alt="Play button" srcset="">
+          </button>
+
+          <span class="Options"> Font Family:
+
+              <span class="tab"><select id="selectFont" class="FontFamilyList" name="Font">
+                  <option id="Classic" value="0">Classic</option>
+
+                  <option id="Verdana" value="1">Verdana</option>
+
+                  <option id="Times New Roman" value="2">Times New Roman</option>
+
+                  <option id="Arial" value="3">Arial</option>
+
+                </select>
+                </span>
+
+          </span>
+
+          <br>
+          <br>
+
+           <span class="Options"> Dark Mode:
+             
+            <span class="tab">
+              <input type="checkbox" id="Mode" name="Mode" value="light">
+            </span>
+          </span>
+
+          <br>
+          <br>
+                <p><br>
+                    
+                <a href="lanceMenuPageTest.html"><button class="saveOptions" onclick="UpdateFont();UpdateMode(); ">Save</button></a> </p>
+
+      </div>
+    </div>
+
+    </body>
+</html>

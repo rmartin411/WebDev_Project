@@ -1,0 +1,102 @@
+@font-face {
+  font-family: titleFont;
+  src: url('../fonts/Morganite-Book.ttf');
+}
+
+@font-face {
+  font-family: menuFont;
+  src: url('../fonts/Morganite-SemiBold.ttf');
+}
+
+*{
+  box-sizing: border-box;
+  overflow: auto;
+    
+}
+
+body{
+    overflow: hidden;
+
+}
+
+
+.wrapper {
+  box-sizing: border-box;
+  overflow: hidden;
+    height: 100%;
+/*
+    background-color: white;
+*/
+
+}
+
+.title {
+  width: 60%;
+  right: 0;
+  float: right;
+}
+
+.title img {
+  float: right;
+  height: 90%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+
+
+#Logo{
+    display: initial;
+}
+
+.menuButtonsLM {
+width: 40%;
+float: right;
+margin: 150px 0px;
+}
+
+.menuButtonsLM a {
+color: #1c1d24;
+font-family: menuFont;
+font-size: 75px;
+display: block;
+margin: 50px 100px;
+text-decoration: none;
+}
+
+.menuButtonsLM a:hover {
+  text-decoration: underline;
+}
+
+.menuButtonsDM {
+width: 40%;
+float: right;
+margin: 150px 0px;
+}
+
+.menuButtonsDM a {
+color: #1c1d24;
+font-family: menuFont;
+font-size: 75px;
+display: block;
+margin: 50px 100px;
+text-decoration: none;
+}
+
+.menuButtonsDM a:hover {
+  text-decoration: underline;
+}
+
+#PlayButton{
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+#PlayButton:focus{
+border: none;
+}

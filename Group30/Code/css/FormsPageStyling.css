@@ -1,0 +1,198 @@
+@font-face {
+                font-family: titleFont;
+                src: url('../fonts/Morganite-Book.ttf');
+                }
+
+            @font-face {
+                font-family: menuFont;
+                src: url('../fonts/Morganite-SemiBold.ttf');
+                }
+
+            *{
+                box-sizing: border-box;
+                overflow: auto;
+                font-family: menuFont;
+            }
+            
+            body{
+                overflow: hidden;
+            }
+
+            #PlayButton{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 40px;
+                width: 40px;
+                background-color: transparent;
+                border: none;
+              }
+              
+              #PlayButton:focus{
+              border: none;
+              }
+
+            .wrapper {
+                box-sizing: border-box;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .chainedTitle {
+                width: 60%;
+                right: 0;
+                float: right;
+            }
+            
+            .chainedTitle img {
+                float: right;
+                height: 90%;
+                margin-right: 10%;
+                margin-top: 1%;
+                
+            }
+            
+            .OptionsPageTitle {
+                width: 40%;
+                float: right;
+                margin: 20px 0px;
+            }
+            
+            #OptionsTitleText{
+                color: black;
+                font-size: 100px;
+                padding-left: 100px;
+            }
+                        
+            .Options{
+                padding-left: 75px;
+                font-size: 50px;
+            }
+            
+            .Options button{
+                height: 42px;
+                width: 42px;
+                border: none;
+                background-color: none;
+                
+            }
+            
+            .Options input{
+                height:50px;
+                width: 50px;
+                vertical-align: middle;
+            }
+            
+            .saveOptions{
+                margin-left: 100px;
+/*
+                color:black;
+*/
+                font-size: 40px;
+                border-radius: 5px;
+                width:150px;
+                padding-top: 5px;
+                background-color: green;
+                border: none;
+                text-align: center;
+                color: white;
+/*
+                opacity: 0.6;
+*/
+                transition: 0.3s;
+                text-decoration: none;
+            }
+            /*.saveOptons:hover{
+                opacity: 1;
+            }*/
+            #resetSessionButton{
+                margin-left: 75px;
+                font-size: 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                background-color: red;
+                color: white;
+                width:75px;
+                padding-top: 5px;
+            
+            }
+            
+            
+            #fontSizeText{
+                margin-left:20px;
+            }
+            
+            #selectFont{
+                height: 35px;
+                width: 150px;
+                font-size: 30px;
+                
+            }
+        
+            .tab{
+                margin-left: 30px;
+                /*vertical-align: middle;*/
+            }
+            
+            #userDetails{
+                margin-top: 200px;
+                margin-left: 75px;
+                
+                
+            }
+            
+            #userDetails legend{
+               font-size: 60px;    
+            }
+            
+            #userDetails label{
+               font-size: 40px;  
+                vertical-align: middle;
+
+            }
+            
+            #userDetails select{
+                margin-left: 20px;
+                height: 30px;
+                font-size: 25px;
+                width: 100px;
+            }
+            
+             #playerName{
+               font-size: 25px;  
+                 width: 150px;
+            }
+            
+            #male, #female{
+                margin: 0 10px 0 10px;
+                padding-bottom: auto;
+                padding-top: auto;
+                vertical-align: middle; 
+            }
+            .wakeButton{
+                margin-left: 230px;
+                margin-top: 30px;
+/*
+                color:black;
+*/
+                font-size: 40px;
+                border-radius: 5px;
+                width:150px;
+                padding-top: 5px;
+                background-color: green;
+                border: none;
+                text-align: center;
+                color: white;
+/*
+                opacity: 0.6;
+*/
+                transition: 0.3s;
+                text-decoration: none;
+            }
+
+#darkImage{
+    visibility: collapse;
+}
+#lightImage{
+    visibility: visible;
+}

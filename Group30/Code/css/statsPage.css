@@ -1,0 +1,81 @@
+@font-face {
+    font-family: titleFont;
+    src: url('../fonts/Morganite-Book.ttf');
+  }
+  
+@font-face {
+    font-family: menuFont;
+    src: url('../fonts/Morganite-SemiBold.ttf');
+  }
+
+* {
+    font-family: menufont;
+    
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    color: #1c1d24;
+
+}
+
+#wrapper {
+    height: 75%;
+}
+
+#title {
+font-size: 70px;
+text-align: center;
+text-decoration: underline;
+height: 25%;
+}
+
+table {
+    width: 100%;
+    font-size: 50px;
+    padding: 5px;
+}
+
+th {
+    border-bottom: solid ;
+}
+
+td {
+    background-color: #f5eee6;
+    text-align: center;
+}
+
+tr:hover td{
+    color: #ea2340;
+}
+
+#top {
+    height: 5%;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    
+}
+#topBtn{
+    color: #1c1d24;
+}
+
+#top a:hover {
+color: #ea2340;
+}
+
+#PlayButton{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #PlayButton:focus{
+  border: none;
+  }

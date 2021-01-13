@@ -1,0 +1,116 @@
+@font-face {
+    font-family: titleFont;
+    src: url('../fonts/Morganite-Book.ttf');
+  }
+
+  @font-face {
+    font-family: menuFont;
+    src: url('../fonts/Morganite-SemiBold.ttf');
+  }
+
+  body {
+      overflow-y: hidden;
+  }
+
+  *{
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  #wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 3600px;
+/*
+    background-color: white;
+*/
+    position: relative;
+    margin: 20px;
+    color: #1c1d24;
+  }
+
+  #people {
+    font-family: menufont;
+    font-weight: bold;
+    font-size: 70px;
+    height: 120px;
+    background-color: #f5eee6;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  #people a {
+    font-size:0.5em;
+    color: #ea2340;
+  }
+
+  #pageScroll a {
+    font-family: menufont;
+    color: #1c1d24;
+    height: 200px;
+    font-size: 50px;
+    overflow: hidden;
+  }
+
+  #pageScroll a:hover {
+    color: #ea2340;
+  }
+
+  #creator {
+     font-family: menufont;
+     height: 200px;
+     font-weight: bold;
+     background-color: #ea2340;
+     color: white;
+     font-size: 180px;
+     overflow: hidden;
+     text-align: center;
+  }
+
+ #bottom {
+    bottom: 10px;
+    position: absolute;
+    font-family: menufont;
+    color: #1c1d24;
+    font-size: 50px;
+    overflow: hidden;
+    padding: 10px;
+ }
+
+ #bottom a {
+     font-weight: bold;
+    color: #1c1d24;
+ }
+
+ #bottom a:hover {
+   color: #ea2340;
+ }
+
+ .initialScreen {
+     height: 100%;
+     background-color: #1c1d24;
+ }
+
+ #animationStart {
+     height: 0px;
+ }
+
+.plusMinus{
+     height: 60px;
+     width: 60px;
+     border: none;
+     background-color: transparent;
+}
+
+#bradImg {
+  width: 22%;
+}
+
+#jessicaImg {
+  width: 16%;
+}
+
+#malcolmImg {
+  width: 21%;
+}
